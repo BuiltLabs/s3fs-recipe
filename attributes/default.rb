@@ -16,7 +16,7 @@ when "centos", "redhat"
     default["fuse"]["version"] = "2.8.5"
   end
 when "amazon"
-  default["s3fs"]["packages"] = %w{gcc libstdc++-devel gcc-c++ curl-devel libxml2-devel openssl-devel mailcap make fuse fuse-devel}
+  default["s3fs"]["packages"] = %w{gcc libstdc++-devel gcc-c++ curl-devel libxml2-devel openssl-devel mailcap make fuse fuse-devel automake}
   default["fuse"]["version"] ="2.9.2"
 when "debian", "ubuntu"
   default["s3fs"]["packages"] = %w{build-essential pkg-config libcurl4-openssl-dev libfuse-dev fuse-utils libfuse2 libxml2-dev mime-support}
